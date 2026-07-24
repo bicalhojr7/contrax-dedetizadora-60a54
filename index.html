@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CONTRAX | Precisão Industrial e Controle Técnico</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "on-primary-container": "#959494",
+                    "inverse-primary": "#c8c6c6",
+                    "surface-variant": "#e5e2e1",
+                    "error-container": "#ffdad6",
+                    "outline": "#747878",
+                    "on-surface": "#1c1b1b",
+                    "inverse-surface": "#313030",
+                    "surface-container-low": "#f6f3f2",
+                    "tertiary": "#16191a",
+                    "on-background": "#1c1b1b",
+                    "tertiary-fixed-dim": "#c5c6c8",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fcf9f8",
+                    "on-surface-variant": "#444748",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-fixed": "#151c27",
+                    "surface-dim": "#dcd9d9",
+                    "background": "#fcf9f8",
+                    "on-error": "#ffffff",
+                    "tertiary-container": "#2a2d2f",
+                    "secondary-container": "#dce2f3",
+                    "on-tertiary-container": "#929496",
+                    "surface-container-high": "#ebe7e7",
+                    "on-primary-fixed": "#1b1c1c",
+                    "on-secondary-container": "#5e6572",
+                    "secondary": "#585f6c",
+                    "on-tertiary-fixed": "#191c1e",
+                    "error": "#ba1a1a",
+                    "secondary-fixed": "#dce2f3",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-primary-fixed-variant": "#474747",
+                    "surface-container": "#f0edec",
+                    "tertiary-fixed": "#e1e2e4",
+                    "primary-fixed": "#e4e2e1",
+                    "surface-tint": "#5f5e5e",
+                    "on-tertiary-fixed-variant": "#444749",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary-fixed-variant": "#404754",
+                    "outline-variant": "#c4c7c7",
+                    "primary-container": "#2d2d2d",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-error-container": "#93000a",
+                    "surface-bright": "#fcf9f8",
+                    "primary": "#181919",
+                    "primary-fixed-dim": "#c8c6c6",
+                    "secondary-fixed-dim": "#c0c7d6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1200px",
+                    "unit": "4px",
+                    "gutter": "24px",
+                    "margin-desktop": "64px",
+                    "margin-mobile": "20px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-sm": ["JetBrains Mono"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "display": ["Inter"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "400"}],
+                    "headline-md": ["20px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                    "display": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #FFFFFF;
+            color: #1C1B1B;
+            -webkit-font-smoothing: antialiased;
+        }
+        .thin-divider {
+            border-bottom: 1px solid #E5E7EB;
+        }
+        .industrial-button {
+            transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .industrial-button:hover {
+            transform: scale(0.98);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="font-body-md">
+<!-- TopNavBar -->
+<nav class="w-full top-0 sticky bg-surface border-b border-outline-variant z-50">
+<div class="flex justify-between items-center px-6 md:px-margin-desktop py-unit*4 max-w-container-max mx-auto h-20">
+<div class="font-headline-lg text-headline-lg tracking-tighter text-primary">CONTRAX</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#servicos">SERVIÇOS</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#sobre">SOBRE</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#qualidade">QUALIDADE</a>
+<a class="font-body-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#contato">CONTATO</a>
+</div>
+<a class="bg-primary-container text-on-primary px-6 py-2 rounded-none font-label-sm text-label-sm industrial-button flex items-center gap-2" href="https://wa.me/5567996314493" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+                WHATSAPP
+            </a>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-0 border-b border-outline-variant">
+<div class="md:col-span-7 px-6 md:px-margin-desktop py-20 md:py-32 flex flex-col justify-center border-r border-outline-variant">
+<span class="font-label-sm text-label-sm text-on-surface-variant mb-6 uppercase tracking-widest">Controle de Pragas</span>
+<h1 class="font-display text-[40px] md:text-display text-primary mb-8 max-w-2xl leading-tight">
+                    Precisão técnica no controle de pragas.
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-xl">
+                    Qualidade comprovada e atendimento personalizado para sua residência ou empresa, fundamentados em metodologias industriais rigorosas.
+                </p>
+<div>
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-none font-label-sm text-label-sm industrial-button uppercase tracking-widest inline-flex items-center gap-4">
+                        Falar com Especialista
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-5 h-[400px] md:h-auto overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional pest control technician in a clean, high-visibility gray and white uniform inspecting a modern industrial facility. He carries specialized chrome application equipment and looks focused and methodical. The background shows a crisp, well-lit corporate environment with polished concrete floors and glass partitions, emphasizing a clean and clinical approach to pest management. The lighting is cold and professional, matching the industrial precision aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCcNYH0x514iJbK9-VYesOYaLBwhZF18EVnRRQHJ1hN8ZR8waV9m_LcmqtoVK6TcKhUvMlId_LG7fE18p8r0mwwMW3Hp5pP5F06-k802lKjLx0KWbYnPFU1MnIV1oob0wWQaMOpxQ3NiUEkqEIIoJzqHM_I0AFVmQ9mhrQBVBhwkg_ZxIr0IXittI-pOCXn0y5htwSa_qExrP-JyAYRoN8Fpfq1J-r6cRoCIvvKLtMiwypIjsCKgM3eNYMxBMXdD6Xvh8bGHigGJo"/>
+</div>
+</section>
+<!-- Section 1: Nossos Serviços -->
+<section class="px-6 md:px-margin-desktop py-24 md:py-32 max-w-container-max mx-auto" id="servicos">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-4 mb-12 md:mb-0">
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase mb-4">Nossos Serviços</h2>
+<div class="h-1 w-12 bg-primary mb-8"></div>
+<p class="font-body-md text-on-surface-variant">Soluções técnicas desenhadas para eliminar focos e prevenir infestações com mínima interferência no ambiente.</p>
+</div>
+<div class="md:col-span-8">
+<div class="flex flex-col">
+<div class="thin-divider py-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-2">01</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase">Insetos Rasteiros</h3>
+</div>
+<p class="font-body-md text-on-surface-variant md:max-w-md">Controle especializado de baratas, formigas e aranhas utilizando iscas em gel e pulverização técnica de longo espectro.</p>
+</div>
+<div class="thin-divider py-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-2">02</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase">Insetos Voadores</h3>
+</div>
+<p class="font-body-md text-on-surface-variant md:max-w-md">Manejo integrado de moscas, mosquitos e vespas através de armadilhas luminosas e barreiras químicas residuais.</p>
+</div>
+<div class="thin-divider py-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-2">03</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase">Roedores</h3>
+</div>
+<p class="font-body-md text-on-surface-variant md:max-w-md">Desratização com instalação de PPE (Pontos de Proteção Permanente) e monitoramento técnico contínuo.</p>
+</div>
+<div class="thin-divider py-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant block mb-2">04</span>
+<h3 class="font-headline-md text-headline-md text-primary uppercase">Sanitização</h3>
+</div>
+<p class="font-body-md text-on-surface-variant md:max-w-md">Eliminação de microrganismos nocivos em superfícies, ideal para ambientes corporativos e áreas comuns.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Visual Context -->
+<section class="w-full h-[600px] overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A wide-angle photograph of a pristine, modern industrial pharmaceutical laboratory. The scene is dominated by white and brushed metal surfaces. In the background, a technician is performing a methodical inspection along the baseboards with professional precision. The floor reflects the overhead daylight-balanced LED lighting. The image conveys a sense of extreme cleanliness, high-stakes professional hygiene, and technical discipline." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBCc98fh_0-3k82EIgi5dhuXUO9NveZKYifAFlOX2wszMgFZb3V6jqtu3z8kgxM0ccv4cXl9NGGVuqbRcgS9naESGrhXELobdop1HiRmuBVPtsG13NOQrlKMX5YiWSzBpEAz81UST2qPIAb0qIHowJUDxF9G_EbF68W2QtOl6es3C00RXUz93hQTCw-RoR-4QdxloE4CFz7wEXPvlcr86Q4kkC0DLodwtz0J72UvIJgS_F3di_EIFfP_BtTlOKibzKJQLj6bKeVqKA')">
+<div class="w-full h-full bg-primary/20 flex items-end p-6 md:p-margin-desktop">
+<div class="bg-white p-8 max-w-md">
+<p class="font-label-sm text-label-sm text-primary uppercase mb-2">Ambientes Controlados</p>
+<p class="font-body-md text-on-surface">Operamos com rigor técnico em espaços que exigem o mais alto nível de conformidade sanitária.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Excelência no Serviço -->
+<section class="px-6 md:px-margin-desktop py-24 md:py-32 bg-surface-container-low" id="sobre">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-6">
+<h2 class="font-headline-lg text-headline-lg text-primary uppercase mb-8">Excelência no Serviço</h2>
+<p class="font-body-lg text-body-lg text-on-surface mb-6">
+                        Na CONTRAX, não apenas aplicamos produtos. Executamos protocolos técnicos rigorosos que garantem a segurança do seu ambiente e das pessoas que o habitam.
+                    </p>
+<p class="font-body-md text-on-surface-variant mb-8">
+                        Nosso compromisso é com a transparência e a precisão industrial. Cada intervenção é precedida por uma análise técnica detalhada da estrutura e do ecossistema local, permitindo intervenções cirúrgicas e duradouras.
+                    </p>
+<ul class="space-y-4">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Equipamentos de última geração</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Certificação técnica obrigatória</span>
+</li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_box</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Produtos com registro na ANVISA</span>
+</li>
+</ul>
+</div>
+<div class="md:col-span-6 flex items-center justify-center p-8">
+<div class="border-[12px] border-white w-full aspect-square relative shadow-sm overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro close-up of a high-precision chemical metering device used in pest control. The focus is sharp on the digital display showing technical measurements, against a blurred background of a clean white industrial surface. The colors are strictly monochromatic grays, blacks, and whites, highlighting the technical and engineering-led nature of the services." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHSOF62M7MoSBokYklUQ_5VXAilExWopgPe6SFxQYZ790WWCKMcKqrhChE7I7xLC3vHeImpuFvTU6nfdoJBsr7unpQBF_5T-Z3Cn8LivFCGt6NNTFoU866WBKyckGTFHDyLglDOQfhHVXOjsabj6FLIm5ZHQpDZmsjFnpAOIdYjYZd6m8NaJc_cIE9_a6MeEL09cZcCH6R6NH6CEPT-597omPFMYbjhXORyJNMqjI-NYSWzHnFSjw8yb9Dpk24AG-RjAtMuhLHcdg"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Conversion Section -->
+<section class="px-6 md:px-margin-desktop py-24 md:py-32 border-t border-outline-variant" id="contato">
+<div class="max-w-container-max mx-auto text-left">
+<h2 class="font-display text-[32px] md:text-headline-lg text-primary mb-8 uppercase tracking-tight">Pronto para proteger seu ambiente?</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-12 max-w-2xl">
+                    Solicite um orçamento técnico sem compromisso. Nossa equipe está pronta para desenhar o plano de controle ideal para sua necessidade específica.
+                </p>
+<div class="flex flex-col md:flex-row items-start md:items-center gap-8">
+<a class="bg-primary-container text-on-primary px-10 py-5 rounded-none font-label-sm text-label-sm industrial-button uppercase tracking-widest inline-flex items-center gap-4" href="https://wa.me/5567996314493" target="_blank">
+                        Iniciar Orçamento no WhatsApp
+                        <span class="material-symbols-outlined">message</span>
+</a>
+<div class="font-label-sm text-label-sm text-primary uppercase">
+                        Ou ligue: <span class="font-bold">(67) 99631-4493</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full border-t border-primary-container">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-6 md:px-margin-desktop py-16 md:py-margin-desktop max-w-container-max mx-auto gap-gutter">
+<div class="flex flex-col gap-4">
+<div class="font-headline-md text-headline-md text-on-primary tracking-tighter">CONTRAX</div>
+<p class="font-label-sm text-label-sm text-on-primary-container uppercase tracking-wider">
+                    © 2024 CONTRAX DEDETIZADORA.<br/>PRECISÃO INDUSTRIAL E CONTROLE TÉCNICO.
+                </p>
+</div>
+<div class="flex flex-wrap gap-8 md:gap-12 mt-12 md:mt-0">
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase opacity-50">Navegação</span>
+<a class="font-label-sm text-label-sm uppercase hover:text-on-primary transition-opacity opacity-80" href="#servicos">SOLICITAR ORÇAMENTO</a>
+<a class="font-label-sm text-label-sm uppercase hover:text-on-primary transition-opacity opacity-80" href="https://wa.me/5567996314493">WHATSAPP</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-sm text-label-sm text-on-primary-container uppercase opacity-50">Legal</span>
+<a class="font-label-sm text-label-sm uppercase hover:text-on-primary transition-opacity opacity-80" href="#">TERMOS</a>
+<a class="font-label-sm text-label-sm uppercase hover:text-on-primary transition-opacity opacity-80" href="#">PRIVACIDADE</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        // Simple scroll reveal for nav links active state
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 100)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                link.classList.add('text-on-surface-variant', 'font-normal');
+                if (link.getAttribute('href').slice(1) === current) {
+                    link.classList.remove('text-on-surface-variant', 'font-normal');
+                    link.classList.add('text-primary', 'font-bold', 'border-b-2', 'border-primary', 'pb-1');
+                }
+            });
+        });
+    </script>
+</body></html>
